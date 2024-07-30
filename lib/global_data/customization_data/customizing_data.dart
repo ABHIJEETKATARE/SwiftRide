@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-String uri = 'http://192.168.137.1:3000';
+String uri = '<yourip>';
 
 class Customize {
   // COLORS
