@@ -50,7 +50,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
   void getSuggestions(String input) async {
     String googleMapsService_api_key =
-        'AIzaSyD1c-hiBmIhIYo7Vvd_vcmXxDmYrSw3YJg';
+        '<YOUR_GOOGLE_API>';
     String url = 'https://maps.googleapis.com/maps/api/place/autocomplete/json';
     String request =
         '$url?input=$input&key=$googleMapsService_api_key&sessiontoken=$_sessionToken';
