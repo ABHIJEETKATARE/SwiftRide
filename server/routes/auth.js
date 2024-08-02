@@ -58,12 +58,12 @@ catch(e){
 }
 
 })
-authRouter.get('/',async(req,res)=>{
-    token=req.header('x-auth-token');
-    verified=jwt.verify(token,"passwordKey");
-    const user = await User.findById(verified.id);
-    res.json({ ...user._doc, token });
-});
+// authRouter.get('/',async(req,res)=>{
+//     token=req.header('x-auth-token');
+//     verified=jwt.verify(token,"passwordKey");
+//     const user = await User.findById(verified.id);
+//     res.json({ ...user._doc, token });
+// });
 authRouter.get("/api/get-drivers",auth,async(req,res)=>{
     try{const drivers=await Drivers.find({});
         
