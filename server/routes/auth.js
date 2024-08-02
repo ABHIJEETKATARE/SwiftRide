@@ -57,7 +57,7 @@ catch(e){
     res.json({error:e.message});
 }
 
-})
+});
 // authRouter.get('/',async(req,res)=>{
 //     token=req.header('x-auth-token');
 //     verified=jwt.verify(token,"passwordKey");
